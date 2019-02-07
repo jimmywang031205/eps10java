@@ -9,18 +9,28 @@ public class Member
 {
     public static final int CURRENT_YEAR = 2019;
     private String firstName, lastName;
-    private int yearBirth, yearJoined;
+    private int yearBorn, yearJoined;
     
     public Member()
     {
 
     }
     
-    public void member(String _firstName, String _lastName, int _yearBirth, int _yearJoined)
+    public void member(String _firstName, String _lastName, int _yearBorn, int _yearJoined)
     {
         firstName = _firstName;
         lastName = _lastName;
-        yearBirth = _yearBirth;
-        yearJoined = _yearJoined;
+        if (_yearBorn < 0)  {
+            yearBorn = (-1*_yearBorn);
+        } else {
+            yearBorn = _yearBorn;
+        }
+        if (_yearJoined < 0)  {
+            yearJoined = (-1*_yearJoined);
+        } else {
+            yearJoined = _yearJoined;
+        }
     }
+    
+    public void 
 }
