@@ -1,0 +1,23 @@
+#BlueJ class context
+comment0.target=name
+comment0.text=\r\n\ Write\ a\ description\ of\ class\ name\ here.\r\n\r\n\ @author\ Max\ Zhang\r\n\ @version\ Jun\ 30,2019\r\n
+comment1.params=
+comment1.target=name()
+comment1.text=\r\n\ Default\ constructor\ for\ objects\ of\ class\ name\r\n
+comment2.params=_firstName\ _lastName\ _age\ _salary\ _employed\ _gender
+comment2.target=void\ name(java.lang.String,\ java.lang.String,\ int,\ float,\ boolean,\ char)
+comment3.params=_firstName
+comment3.target=void\ setFirstName(java.lang.String)
+comment4.params=
+comment4.target=java.lang.String\ getFirstName()
+comment5.params=_lastName
+comment5.target=void\ setLastName(java.lang.String)
+comment6.params=
+comment6.target=java.lang.String\ getLastName()
+comment7.params=_age
+comment7.target=void\ setage(int)
+comment8.params=
+comment8.target=int\ getage()
+comment9.params=
+comment9.target=void\ display()
+numComments=10
