@@ -1,0 +1,27 @@
+#BlueJ class context
+comment0.target=Member
+comment0.text=\r\n\ Write\ a\ description\ of\ class\ Member\ here.\r\n\r\n\ @author\ Max\r\n\ @version\ 2019-02-07\r\n
+comment1.params=
+comment1.target=Member()
+comment1.text=\r\n\ Constructor\ for\ objects\ of\ class\ Member\r\n
+comment10.params=
+comment10.target=boolean\ qualifiesForDiscount()
+comment11.params=
+comment11.target=void\ display()
+comment2.params=_firstName\ _lastName\ _birthYear\ _joinYear
+comment2.target=void\ Kember(java.lang.String,\ java.lang.String,\ int,\ int)
+comment3.params=_firstName
+comment3.target=void\ setFirstName(java.lang.String)
+comment4.params=
+comment4.target=java.lang.String\ getFirstName()
+comment5.params=_lastName
+comment5.target=void\ setLastName(java.lang.String)
+comment6.params=
+comment6.target=java.lang.String\ getLastName()
+comment7.params=_birthYear
+comment7.target=void\ setbirthYear(int)
+comment8.params=
+comment8.target=int\ getbirthYear()
+comment9.params=
+comment9.target=java.lang.String\ returnFullname()
+numComments=12
