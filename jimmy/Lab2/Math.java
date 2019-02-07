@@ -13,7 +13,7 @@ public class Math
     
     public Math()
     {
-        System.out.println("Math");
+        //System.out.println("Math");
         myInput = new Input();
     }
     
