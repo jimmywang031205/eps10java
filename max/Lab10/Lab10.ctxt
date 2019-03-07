@@ -1,0 +1,11 @@
+#BlueJ class context
+comment0.target=Lab10
+comment0.text=\r\n\ Write\ a\ description\ of\ class\ Lab10\ here.\r\n\r\n\ @author\ Max\r\n\ @version\ 2019-03-06\r\n
+comment1.params=
+comment1.target=Lab10()
+comment1.text=\r\n\ Constructor\ for\ objects\ of\ class\ Lab10\r\n
+comment2.params=
+comment2.target=void\ main()
+comment3.params=n
+comment3.target=void\ Prime(int)
+numComments=4
