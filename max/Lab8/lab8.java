@@ -14,9 +14,9 @@ public class lab8
     }
     public void main(){
         System.out.print("Enter first number:");
-        int first = myInput.getInt();
+        int first = myInput.getInt(),num1=first;
         System.out.print("Enter second number:");
-        int second = myInput.getInt(),ans=second,count=0,num;
+        int second = myInput.getInt(),count=0,num2=second,num;
         System.out.print(first + " "+second+" ");
         do{
             num =(first+second)%10;
@@ -24,7 +24,7 @@ public class lab8
             first=second;
             second=num;
             count++;
-        }while(num!=ans);
+        }while(!(num1 == first && num2 == second));
         System.out.println("\nYour numbers required "+count+" steps.");
     }
 }
