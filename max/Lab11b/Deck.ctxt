@@ -1,13 +1,39 @@
 #BlueJ class context
 comment0.target=Deck
-comment0.text=\r\n\ Write\ a\ description\ of\ class\ Deck\ here.\r\n\r\n\ @author\ (your\ name)\r\n\ @version\ (a\ version\ number\ or\ a\ date)\r\n
+comment0.text=\r\n\ Write\ a\ description\ of\ class\ Deck\ here.\r\n\r\n\ @author\ Max\r\n\ @version\ 1.41\r\n\ @log\:\r\n\ 1.0\ creat\ class\r\n\ 1.01\ add\ loadDeck\ and\ shuffle(contain\ swap),turnoff\ swapme\ func\r\n\ 1.1\ update\ loadDeck\r\n\ 1.11\ rewrite\ loadDeck,change\ date\ type\ of\ hit(int->string)\r\n\ 1.20\ beta\ creat\ Dealer\ AI\ \r\n\ 1.21\ creat\ AceCheck\r\n\ 1.22\ update\ AceCheck\r\n\ 1.22\ AceCheck\ finish\r\n\ 1.30\ beta\ creat\ betting_system\r\n\ 1.31\ creat\ bet_check\r\n\ 1.32\ betting\ system\ finish\r\n\ 1.40\ beta\ creat\ take\r\n\ 1.41\ take\ finish\r\n\ 1.41\ working\ version\ compliete\r\n
 comment1.params=
 comment1.target=Deck()
-comment1.text=\r\n\ Constructor\ for\ objects\ of\ class\ Deck\r\n
-comment2.params=cardToAdd
-comment2.target=void\ addCard(Card)
+comment10.params=i
+comment10.target=void\ AceCheck(int)
+comment10.text=\r\n\ \ \ \ public\ int\ AceCheck(Card\ _tempCard,int\ tempTotal)\r\n\ \ \ \ {\r\n\ \ \ \ \ \ \ \ if(tempTotal+11>21)\r\n\ \ \ \ \ \ \ \ {\r\n\ \ \ \ \ \ \ \ \ \ \ \ if(pTotal+1>21)\r\n\ \ \ \ \ \ \ \ \ \ \ \ {\r\n\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ System.out.println("YOU\ LOSE");\r\n\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ return\ 0;\r\n\ \ \ \ \ \ \ \ \ \ \ \ }\r\n\ \ \ \ \ \ \ \ \ \ \ \ else\ tempTotal+\=1;\ \ \ \ \r\n\ \ \ \ \ \ \ \ }\r\n\ \ \ \ \ \ \ \ else\ tempTotal+\=11;\r\n\ \ \ \ \ \ \ \ \ \ \ \ \r\n\ \ \ \ \ \ \ \ return\ tempTotal;\r\n\ \ \ \ }\r\n
+comment11.params=
+comment11.target=void\ Judge()
+comment12.params=
+comment12.target=void\ Black_Jack()
+comment13.params=cardToAdd
+comment13.target=void\ addCard(Card)
+comment14.params=
+comment14.target=void\ takeCard()
+comment15.params=
+comment15.target=Card\ take()
+comment16.params=
+comment16.target=void\ showDeck()
+comment2.params=
+comment2.target=void\ Play()
 comment3.params=
-comment3.target=Card\ takeCard()
+comment3.target=int\ Betting()
 comment4.params=
-comment4.target=void\ showDeck()
-numComments=5
+comment4.target=void\ CheckOut()
+comment5.params=
+comment5.target=void\ loadDeck()
+comment6.params=num1\ num2
+comment6.target=void\ swap(int,\ int)
+comment6.text=\r\n\ \ \ \ public\ void\ swapME()\r\n\ \ \ \ {\r\n\ \ \ \ \ \ \ \ swap(0,1);\r\n\ \ \ \ }\r\n
+comment7.params=
+comment7.target=void\ shuffle()
+comment8.params=
+comment8.target=void\ Deal()
+comment8.text=\r\n\ \ \ \ public\ void\ deal()\r\n\ \ \ \ {\r\n\ \ \ \ \ \ \ \ Card\ downCard\=new\ Card();\r\n\ \ \ \ \ \ \ \ downCard\=CardList.get(0);\r\n\ \ \ \ \ \ \ \ tempCard\=CardList.get(0);\r\n\ \ \ \ \ \ \ \ System.out.println("Down\ Card");\r\n\ \ \ \ \ \ \ \ dTotal\=tempCard.getValue();\r\n\ \ \ \ \ \ \ \ takeCard();\r\n\ \ \ \ \ \ \ \ tempCard\=CardList.get(0);\r\n\ \ \ \ \ \ \ \ System.out.println(tempCard.getDescription()+"\ of\ "+tempCard.getSuit());\r\n\ \ \ \ \ \ \ \ dTotal+\=tempCard.getValue();\r\n\ \ \ \ \ \ \ \ System.out.println("Dealer\ Total\="+dTotal);\r\n\ \ \ \ \ \ \ \ \r\n\ \ \ \ \ \ \ \ tempCard\=CardList.get(0);\r\n\ \ \ \ \ \ \ \ System.out.println(tempCard.getDescription()+"\ of\ "+tempCard.getSuit());\r\n\ \ \ \ \ \ \ \ pTotal\=tempCard.getValue();\r\n\ \ \ \ \ \ \ \ takeCard();\r\n\ \ \ \ \ \ \ \ tempCard\=CardList.get(0);\r\n\ \ \ \ \ \ \ \ System.out.println(tempCard.getDescription()+"\ of\ "+tempCard.getSuit());\r\n\ \ \ \ \ \ \ \ pTotal+\=tempCard.getValue();\r\n\ \ \ \ \ \ \ \ System.out.println("Play\ total\="+\ pTotal);\r\n\ \ \ \ \ \ \ \ pTotal\=0;\r\n\ \ \ \ \ \ \ \ System.out.print("Would\ you\ like\ a\ hit?(1\=yes/2\=no)");\r\n\ \ \ \ \ \ \ \ hit\=MyInput.getInt();\r\n\ \ \ \ \ \ \ \ while(pTotal\ <\=21\ &&\ hit\ \=\=\ 1)\r\n\ \ \ \ \ \ \ \ {\r\n\ \ \ \ \ \ \ \ \ \ \ \ takeCard();\r\n\ \ \ \ \ \ \ \ \ \ \ \ tempCard\=CardList.get(0);\r\n\ \ \ \ \ \ \ \ \ \ \ \ System.out.println(tempCard.getDescription()+"\ of\ "+tempCard.getSuit());\r\n\ \ \ \ \ \ \ \ \ \ \ \ pTotal+\=tempCard.getValue();\r\n\ \ \ \ \ \ \ \ \ \ \ \ System.out.println("Player\ Total\="+pTotal);\r\n\ \ \ \ \ \ \ \ \ \ \ \ \r\n\ \ \ \ \ \ \ \ \ \ \ \ System.out.println("Woluld\ you\ like\ a\ hit\ ?(1\=yes/2\=no)");\r\n\ \ \ \ \ \ \ \ \ \ \ \ hit\=MyInput.getInt();\r\n\ \ \ \ \ \ \ \ }\r\n\ \ \ \ \ \ \ \ System.out.println();\r\n\ \ \ \ \ \ \ \ System.out.println("Dealer\ had"+downCard.getDescription()+"\ of\ "+downCard.getSuit());\r\n\ \ \ \ \ \ \ \ System.out.println("Dealer\ Total\="+dTotal);\r\n\ \ \ \ \ \ \ \ System.out.println("Woluld\ you\ like\ a\ hit\ ?(1\=yes/2\=no)");\r\n\ \ \ \ \ \ \ \ hit\=MyInput.getInt();\r\n\ \ \ \ \ \ \ \ while(pTotal\ <\=21\ &&\ hit\ \=\=\ 1)\r\n\ \ \ \ \ \ \ \ {\r\n\ \ \ \ \ \ \ \ \ \ \ \ takeCard();\r\n\ \ \ \ \ \ \ \ \ \ \ \ tempCard\=CardList.get(0);\r\n\ \ \ \ \ \ \ \ \ \ \ \ System.out.println(tempCard.getDescription()+"\ of\ "+tempCard.getSuit());\r\n\ \ \ \ \ \ \ \ \ \ \ \ pTotal+\=tempCard.getValue();\r\n\ \ \ \ \ \ \ \ \ \ \ \ System.out.println("Player\ Total\="+pTotal);\r\n\ \ \ \ \ \ \ \ \ \ \ \ \r\n\ \ \ \ \ \ \ \ \ \ \ \ System.out.println("Woluld\ you\ like\ a\ hit\ ?(1\=yes/2\=no)");\r\n\ \ \ \ \ \ \ \ \ \ \ \ hit\=MyInput.getInt();\r\n\ \ \ \ \ \ \ \ }\r\n\ \ \ \ \ \ \ \ if(dTotal>pTotal)System.out.println("Dealer\ Wins\!");\r\n\ \ \ \ \ \ \ \ else\ if(pTotal>dTotal)System.out.println("Player\ Wins\!");\r\n\ \ \ \ \ \ \ \ pTotal\=0;\r\n\ \ \ \ \ \ \ \ dTotal\=0;\r\n\ \ \ \ \ \ \ \ \r\n\ \ \ \ }\r\n
+comment9.params=
+comment9.target=void\ stand()
+numComments=17

@@ -11,7 +11,6 @@ public class Card
     private String suit;
     private int value;
     private String description; 
-
     /**
      * Constructor for objects of class Card
      */
