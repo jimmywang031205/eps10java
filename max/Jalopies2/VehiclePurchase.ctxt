@@ -1,0 +1,22 @@
+#BlueJ class context
+comment0.target=VehiclePurchase
+comment0.text=\r\n\ Write\ a\ description\ of\ class\ VehiclePurchase\ here.\r\n\r\n\ @author\ Max\r\n\ @version\ 1.2\r\n
+comment1.params=
+comment1.target=VehiclePurchase()
+comment2.params=renter\ purchaseDate\ vehiclePurchased\ servicePackage
+comment2.target=VehiclePurchase(Customer,\ PurchaseDate,\ Vehicle,\ boolean)
+comment3.params=
+comment3.target=Customer\ getCustomer()
+comment4.params=
+comment4.target=PurchaseDate\ getPurchaseDate()
+comment5.params=
+comment5.target=Vehicle\ getVehiclePurchased()
+comment6.params=
+comment6.target=boolean\ hasServicePackage()
+comment7.params=servicePackage
+comment7.target=void\ setServicePackage(boolean)
+comment8.params=purchasePrice
+comment8.target=void\ calculatePurchasePrice(double)
+comment9.params=
+comment9.target=void\ display()
+numComments=10
