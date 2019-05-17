@@ -1,0 +1,13 @@
+#BlueJ class context
+comment0.target=map
+comment1.params=
+comment1.target=map()
+comment2.params=
+comment2.target=void\ grid()
+comment3.params=
+comment3.target=void\ play()
+comment4.params=
+comment4.target=void\ getCommand()
+comment5.params=type\ id\ x\ y
+comment5.target=void\ event_postion(int,\ int,\ int,\ int)
+numComments=6

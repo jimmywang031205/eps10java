@@ -1,0 +1,19 @@
+#BlueJ class context
+comment0.target=game
+comment0.text=\r\n\ Main\ func\ for\ game\:Zork\r\n\r\n\ @author\ Max\r\n\ @version\ 1.01\ dev\r\n
+comment1.params=
+comment1.target=game()
+comment1.text=\r\n\ Constructor\ for\ objects\ of\ class\ Game\r\n
+comment2.params=num
+comment2.target=void\ Monster_Generator(int)
+comment3.params=num
+comment3.target=void\ Treasure_Generator(int)
+comment4.params=
+comment4.target=void\ combat()
+comment5.params=
+comment5.target=void\ map()
+comment6.params=
+comment6.target=void\ play()
+comment7.params=
+comment7.target=void\ initPlayer()
+numComments=8

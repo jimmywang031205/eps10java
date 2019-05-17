@@ -1,0 +1,27 @@
+#BlueJ class context
+comment0.target=monster
+comment0.text=\r\n\ Write\ a\ description\ of\ class\ monster\ here.\r\n\r\n\ @author\ (your\ name)\r\n\ @version\ (a\ version\ number\ or\ a\ date)\r\n
+comment1.params=_health\ _mana\ _strength\ _x\ _y
+comment1.target=monster(int,\ int,\ int,\ int,\ int)
+comment1.text=\r\n\ Constructor\ for\ objects\ of\ class\ monster\r\n
+comment10.params=_y
+comment10.target=void\ setY(int)
+comment11.params=
+comment11.target=int\ getY()
+comment2.params=_health
+comment2.target=void\ setHealth(int)
+comment3.params=
+comment3.target=int\ getHealth()
+comment4.params=_mana
+comment4.target=void\ setMana(int)
+comment5.params=
+comment5.target=int\ getMana()
+comment6.params=_strength
+comment6.target=void\ setStrength(int)
+comment7.params=
+comment7.target=int\ getStrength()
+comment8.params=_x
+comment8.target=void\ setX(int)
+comment9.params=
+comment9.target=int\ getX()
+numComments=12
