@@ -1,0 +1,15 @@
+#BlueJ class context
+comment0.target=Tree
+comment0.text=\r\n\ Write\ a\ description\ of\ class\ Tree\ here.\r\n\r\n\ @author\ (your\ name)\r\n\ @version\ (a\ version\ number\ or\ a\ date)\r\n
+comment1.params=_species\ _age
+comment1.target=Tree(java.lang.String,\ int)
+comment1.text=\r\n\ Constructor\ for\ objects\ of\ class\ Tree\r\n
+comment2.params=_species
+comment2.target=void\ setSpecies(java.lang.String)
+comment3.params=
+comment3.target=java.lang.String\ getSpecies()
+comment4.params=_age
+comment4.target=void\ setAge(int)
+comment5.params=
+comment5.target=int\ getAge()
+numComments=6
