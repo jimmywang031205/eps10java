@@ -1,0 +1,23 @@
+#BlueJ class context
+comment0.target=game
+comment0.text=\r\n\ Main\ func\ for\ game\:Zork\r\n\r\n\ @author\ Max\r\n\ @version\ 1.01\ dev\r\n
+comment1.params=
+comment1.target=game()
+comment1.text=\r\n\ Constructor\ for\ objects\ of\ class\ Game\r\n
+comment2.params=num
+comment2.target=void\ Monster_Generator(int)
+comment3.params=num
+comment3.target=void\ Treauser_Generator(int)
+comment4.params=
+comment4.target=void\ play()
+comment5.params=
+comment5.target=void\ initPlayer()
+comment6.params=type\ x\ y
+comment6.target=void\ find(int,\ int,\ int)
+comment7.params=min\ max
+comment7.target=int\ rand(int,\ int)
+comment8.params=
+comment8.target=void\ monsterComba()
+comment9.params=type\ x\ y
+comment9.target=void\ remove(int,\ int,\ int)
+numComments=10
