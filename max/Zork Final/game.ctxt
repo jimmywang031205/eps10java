@@ -1,0 +1,25 @@
+#BlueJ class context
+comment0.target=game
+comment1.params=
+comment1.target=game()
+comment10.params=type\ x\ y
+comment10.target=void\ remove(int,\ int,\ int)
+comment11.params=x\ y\ health\ strength\ mana
+comment11.target=void\ chageMonster(int,\ int,\ int,\ int,\ int)
+comment2.params=num
+comment2.target=void\ Monster_Generator(int)
+comment3.params=num
+comment3.target=void\ Treauser_Generator(int)
+comment4.params=
+comment4.target=void\ pressAnyKeyToContinue()
+comment5.params=
+comment5.target=void\ play()
+comment6.params=type\ x\ y
+comment6.target=void\ find(int,\ int,\ int)
+comment7.params=min\ max
+comment7.target=int\ rand(int,\ int)
+comment8.params=
+comment8.target=void\ monsterComba()
+comment9.params=
+comment9.target=void\ treasureFound()
+numComments=12

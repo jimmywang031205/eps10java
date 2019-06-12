@@ -1,0 +1,26 @@
+#BlueJ class context
+comment0.target=combat
+comment1.params=monster\ character
+comment1.target=combat(monster,\ character)
+comment1.text=\r\n\ Constructor\ for\ objects\ of\ class\ combat\r\n
+comment10.params=
+comment10.target=int\ getMonster_strength()
+comment11.params=
+comment11.target=int\ getMonster_Mana()
+comment2.params=
+comment2.target=void\ pressAnyKeyToContinue()
+comment3.params=monster\ character
+comment3.target=void\ first_combat(monster,\ character)
+comment4.params=monster\ character
+comment4.target=void\ second_combat(monster,\ character)
+comment5.params=
+comment5.target=int\ getRespond()
+comment6.params=
+comment6.target=int\ getCharacter_health()
+comment7.params=
+comment7.target=int\ getCharacter_strength()
+comment8.params=
+comment8.target=int\ getCharacter_Mana()
+comment9.params=
+comment9.target=int\ getMonster_health()
+numComments=12
