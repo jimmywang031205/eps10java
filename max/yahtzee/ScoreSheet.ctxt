@@ -1,0 +1,19 @@
+#BlueJ class context
+comment0.target=ScoreSheet
+comment1.params=
+comment1.target=ScoreSheet()
+comment2.params=
+comment2.target=void\ init()
+comment3.params=firstTime
+comment3.target=void\ display(boolean)
+comment4.params=
+comment4.target=boolean\ game_finished()
+comment5.params=dice\ preserve
+comment5.target=void\ counter(int[],\ int[])
+comment6.params=type
+comment6.target=void\ swicher(int)
+comment7.params=
+comment7.target=int\ getSum()
+comment8.params=action
+comment8.target=void\ player_action(java.lang.String)
+numComments=9

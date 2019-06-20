@@ -1,0 +1,9 @@
+#BlueJ class context
+comment0.target=Yatzhee
+comment1.params=
+comment1.target=Yatzhee()
+comment2.params=number
+comment2.target=void\ dice(int)
+comment3.params=
+comment3.target=void\ pick_out()
+numComments=4

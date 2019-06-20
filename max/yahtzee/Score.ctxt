@@ -1,0 +1,17 @@
+#BlueJ class context
+comment0.target=Score
+comment1.params=name
+comment1.target=Score(java.lang.String)
+comment2.params=_description
+comment2.target=void\ setDescription(java.lang.String)
+comment3.params=
+comment3.target=java.lang.String\ getDescription()
+comment4.params=_used
+comment4.target=void\ setUsed(int)
+comment5.params=
+comment5.target=int\ getUsed()
+comment6.params=_score
+comment6.target=void\ setScore(int)
+comment7.params=
+comment7.target=int\ getScore()
+numComments=8
