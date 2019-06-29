@@ -1,9 +1,10 @@
-
+import java.util.Scanner;
 /**
  * Write a description of class Book here.
  *
  * @author Max
  * @version 2019-02-08
+ * @version 2019-02-13
  */
 public class Book
 {
@@ -12,22 +13,23 @@ public class Book
     private int pages=0;
     private boolean paperback_ava;
     private double price=0;
+    private Input myInput;
     /**
      * Constructor for objects of class Book
      */
     public Book()//init
     {
         // initialise instance variables
-
+        myInput= new Input();
     }
-    public void Book(String _title,String _author,String _ISBN, int _pages,boolean _paperback_ava,double _price)
+    public void Book(String _title,String _author,String _ISBN, boolean _paperback_ava)
     {
         settitle(_title);
         setauthor(_author);
         setISBN(_ISBN);
-        setpages(_pages);
+        setpages();
         setpaperback_ava(_paperback_ava);
-        setprice(_price);
+        setprice();
     }
     
     public void settitle(String _title)
@@ -57,10 +59,18 @@ public class Book
         return ISBN;
     }
     
-    public void setpages(int _pages)
+    public void setpages()
     {
-        //pages>0?pages=_pages:pages=0;
+        System.out.print("Input the number of the pages: ");
+        int _pages;
+        _pages=myInput.getInt();
         if(_pages>0) pages=_pages;
+        else
+        {
+           System.out.println("Invalid Input");
+           setpages();
+        }
+        //pages>0?pages=_pages:pages=0;
     }
     public int getpages()
     {
@@ -76,9 +86,32 @@ public class Book
         return paperback_ava;
     }
     
-    public void setprice(double _price)
+    public void setprice()
     {
-        if(_price>0)price = _price;
+        System.out.println("Input the price: ");
+        double _price;
+        _price=myInput.getDouble();
+        if((_price>=0.01)&&(_price<=0.99))
+        {
+            System.out.println("too low");
+            setprice();
+        }
+        else if((_price>10))
+        {
+            System.out.println("too high");
+            setprice();
+        }
+        else if((_price>0)&&(_price<=10))
+        {
+            _price=price;
+        }
+        else
+        {
+            System.out.println("Invalid Input");
+            setprice();
+        }
+
+       
     }
     public double getprice()
     {

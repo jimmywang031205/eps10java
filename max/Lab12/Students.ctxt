@@ -1,19 +1,21 @@
 #BlueJ class context
 comment0.target=Students
+comment0.text=\r\n\ Write\ a\ description\ of\ class\ Students\ here.\r\n\r\n\ @author\ (your\ name)\r\n\ @version\ (a\ version\ number\ or\ a\ date)\r\n
 comment1.params=
 comment1.target=Students()
+comment1.text=\r\n\ Constructor\ for\ objects\ of\ class\ Students\r\n
 comment10.params=
 comment10.target=int\ getGrade()
 comment11.params=_Gender
-comment11.target=void\ setGender(java.lang.String)
+comment11.target=void\ setGender(char)
 comment12.params=
-comment12.target=java.lang.String\ getGender()
+comment12.target=char\ getGender()
 comment13.params=_Programming_12_Student
 comment13.target=void\ setProgramming_12_Student(boolean)
 comment14.params=
 comment14.target=boolean\ getProgramming_12_Student()
 comment2.params=_firstName\ _lastName\ _Student_Number\ _Grade\ _Gender\ _Programming_12_Student
-comment2.target=void\ Students(java.lang.String,\ java.lang.String,\ java.lang.String,\ int,\ java.lang.String,\ boolean)
+comment2.target=void\ Students(java.lang.String,\ java.lang.String,\ java.lang.String,\ int,\ char,\ boolean)
 comment3.params=_firstName
 comment3.target=void\ setFirstName(java.lang.String)
 comment4.params=

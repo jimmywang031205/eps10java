@@ -22,13 +22,29 @@ public class combat
             if(monster.getLevel()>character.getLevel())
             {
                 second_combat(monster,character);
-            
+                System.out.println("------------Enemy first-----------");
+                break;
             }
             else 
             {
                 first_combat(monster,character);
-                System.out.println("1");
+                System.out.println("------------Player first------------");
             }
+        }
+        if(code==404)
+        {
+            System.out.println("▓█████▄ ▓█████ ▄▄▄     ▄▄▄█████▓ ██░ ██ ");
+            System.out.println("▒██▀ ██▌▓█   ▀▒████▄   ▓  ██▒ ▓▒▓██░ ██▒");
+            System.out.println("░██   █▌▒███  ▒██  ▀█▄ ▒ ▓██░ ▒░▒██▀▀██░");
+            System.out.println("░▓█▄   ▌▒▓█  ▄░██▄▄▄▄██░ ▓██▓ ░ ░▓█ ░██ ");
+            System.out.println("░▒████▓ ░▒████▒▓█   ▓██▒ ▒██▒ ░ ░▓█▒░██▓");
+            System.out.println(" ▒▒▓  ▒ ░░ ▒░ ░▒▒   ▓▒█░ ▒ ░░    ▒ ░░▒░▒");
+            System.out.println(" ░ ▒  ▒  ░ ░  ░ ▒   ▒▒ ░   ░     ▒ ░▒░ ░");
+            System.out.println(" ░ ░  ░    ░    ░   ▒    ░       ░  ░░ ░");
+            System.out.println("   ░       ░  ░     ░  ░         ░  ░  ░");
+            System.out.println(" ░                                      ");
+            System.out.println("宮崎_英高 de 诅咒 ..... W~D~N~M~D~ 犹.豫.就.会.白.给.");
+            
         }
         
     }
@@ -51,25 +67,49 @@ public class combat
     
     public void first_combat(monster monster,character character)
     {
-        int player_attack=character.getStrength()*character.getLevel()+character.getMana()*character.getLevel();
-        System.out.println(character.getStrength()+" "+character.getLevel()+" "+character.getMana());
-        int player_defence=player_attack;
-        int monster_attack=monster.getStrength()*monster.getLevel()+monster.getMana()*monster.getLevel();
-        int monster_denfence=monster.getStrength()*monster.getLevel()+monster.getMana()*monster.getLevel();
-        System.out.println(monster.getStrength()+" "+monster.getLevel()+" "+monster.getMana());
+        double player_attack=character.getStrength()*character.getLevel()+character.getMana()*character.getLevel();
+        //System.out.println(character.getStrength()+" "+character.getLevel()+" "+character.getMana());
+        double player_defence=character.getStrength()*character.getLevel()+character.getMana()*character.getLevel()+character.getHealth()*(character.getStrength()* 0.25);
+        double monster_attack=monster.getStrength()*monster.getLevel()+monster.getMana()*monster.getLevel();
+        double monster_denfence=monster.getStrength()*monster.getLevel()+monster.getMana()*monster.getLevel();
+        //System.out.println(monster.getStrength()+" "+monster.getLevel()+" "+monster.getMana());
         System.out.println("Round "+count+": "+character.getName()+" attacked "+monster.getDescription());
         System.out.println("The damage "+character.getName()+" can do is: "+player_attack);
         System.out.println(monster.getDescription()+"'s armor: "+monster_denfence);
         pressAnyKeyToContinue();
-        if(player_attack>=monster_denfence)
+        if(player_attack>monster_denfence)
         {
-            System.out.println("OVERKILL!");
+            System.out.println(" ██████╗     ██╗     ██╗    ███████╗    ██████╗     ██╗  ██╗   ██╗    ██╗         ██╗     ");
+            System.out.println("██╔═══██╗    ██║    ██║    ██╔════╝    ██╔══██╗    ██║ ██╔╝   ██║    ██║         ██║     ");
+            System.out.println("██║    ██║    ██║   ██║    █████╗      ██████╔╝    █████╔╝     ██║    ██║         ██║     ");
+            System.out.println("██║    ██║    ╚██╗ ██╔╝    ██╔══╝      ██╔══██╗    ██╔═██╗     ██║    ██║         ██║     ");
+            System.out.println("╚██████╔╝     ╚████╔╝     ███████╗    ██║  ██║    ██║  ██╗     ██║    ███████╗   ███████╗");
+            System.out.println(" ╚═════╝       ╚═══╝       ╚══════╝    ╚═╝  ╚═╝    ╚═╝  ╚═╝     ╚═╝   ╚══════╝   ╚══════╝");
+            System.out.println("公!!!   鸡!!!   大!!!   鱼!!!   怪!!!");
             code=1;
             
         }
-        else
+        else 
         {
-            
+            System.out.println("We failed to penetrate the enemy's armor!");
+            if(player_attack==monster_denfence && (monster.getStrength()!=0))
+            {
+                System.out.println("The enemy just blocked your attack!");
+                System.out.println("Causes minor damage to enemy armor.");
+                monster.setStrength(monster.getStrength()-double(player_attack));
+            }
+            else if(player_attack>monster_denfence*0.75 &&(monster.getStrength()!=0))
+            {
+                
+            }
+            else if(player_attack>monster_denfence*0.5 &&(monster.getStrength()!=0))
+            {
+                
+            }
+            else if(player_attack>monster_denfence*0.25 &&(monster.getStrength()!=0))
+            {
+                
+            }
         }
         
         count++;

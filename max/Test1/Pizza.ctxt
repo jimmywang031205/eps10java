@@ -1,5 +1,6 @@
 #BlueJ class context
 comment0.target=Pizza
+comment0.text=\r\n\ Write\ a\ description\ of\ class\ Book\ here.\r\n\r\n\ @author\ Max\r\n\ @version\ 2019-02-26\r\n
 comment1.params=
 comment1.target=Pizza()
 comment10.params=_topping1
